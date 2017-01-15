@@ -18,13 +18,16 @@ title: not only coffee
 {% if paginator.total_pages > 1 %}
 <!-- 分页代码 -->
 
+<!-- 首页 -->
+<a href="/">First</a>
+<!-- 首页 -->
+
 <!-- 上一页 -->
 	{% if paginator.previous_page %}
 	    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
 	{% endif %}
 <!-- 上一页 -->
 
-	<a href="/">First</a>
 
 <!-- 页码 -->
 	{% for page in (1..paginator.total_pages) %}
@@ -39,15 +42,15 @@ title: not only coffee
 <!-- 页码 -->	
 
 
-	<a href="/page{{ paginator.total_pages }}/">Last</a>
-
-
-
 <!-- 下一页 -->
 	{% if paginator.next_page %}
 	    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
 	{% endif %}
 <!-- 下一页 -->
+
+<!-- 末页 -->
+<a href="/page{{ paginator.total_pages }}/">Last</a>
+<!-- 末页 -->
 
 {% endif %}
 </div>
