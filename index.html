@@ -22,6 +22,9 @@ title: not only coffee
 	{% if paginator.previous_page %}
 	    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
 	{% endif %}
+<!-- 上一页 -->
+
+	<a href="/">First</a>
 
 <!-- 页码 -->
 	{% for page in (1..paginator.total_pages) %}
@@ -33,13 +36,18 @@ title: not only coffee
 	      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 	    {% endif %}
 	{% endfor %}
+<!-- 页码 -->	
+
+
+	<a href="/page{{ paginator.total_pages }}/">Last</a>
+
 
 
 <!-- 下一页 -->
 	{% if paginator.next_page %}
 	    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
 	{% endif %}
-
+<!-- 下一页 -->
 
 {% endif %}
 </div>
