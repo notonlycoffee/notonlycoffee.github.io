@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 我的blog
+title: not only coffee
 ---
 
 <h2>{{ page.title }}</h2>
