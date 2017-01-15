@@ -3,3 +3,5 @@
 paginate: 2
 paginate_path: "page:num"
 #index.html使用分页效果 结束
+
+baseurl: /
