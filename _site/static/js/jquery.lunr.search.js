@@ -54,6 +54,17 @@
       };
     };
 
+     Mustache.compile = function (template) {
+    // This operation parses the template and caches
+    // the resulting token tree. All future calls to
+    // mustache.render can now skip the parsing step.
+    Mustache.parse(template);
+
+      return function (view, partials) {
+        return Mustache.render(template, view, partials);
+      };
+    };  
+
     // load the search index data
     LunrSearch.prototype.loadIndexData = function(callback) {
       $.getJSON(this.indexDataUrl, callback);
