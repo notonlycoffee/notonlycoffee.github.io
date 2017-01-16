@@ -1,0 +1,9 @@
+* {margin:0;padding:0;}
+
+body {
+	background-image: url(../img/default-background_blue.jpg);
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
