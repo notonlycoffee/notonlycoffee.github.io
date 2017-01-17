@@ -9,31 +9,23 @@
 
 	<body>
 		
-		<div>
-			{{ content }}
+
+	<div id="content_all">
+		
+		<div id="content_left">
+			
+			{% include left.html %}
+
 		</div>
 
-		<div>
-		{% raw %}
-		<script id="search-results-template" type="text/mustache">
-		  {{#entries}}
-		    <article>
-		      <h3>
-		        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-		        <a href="{{url}}">{{title}}</a>
-		      </h3>
-		      {{#is_post}}
-		      <ul>
-		        {{#tags}}<li>{{.}} </li>{{/tags}}
-		      </ul>
-		      {{/is_post}}
-		    </article>
-		  {{/entries}}
-		</script>
-		{% endraw %}
+		<div id="content_center">
+			
+			{{ content }}
+
 		</div>
+	</div>
+
+
 
 	</body>
-
-
 </html>

@@ -1,9 +1,54 @@
 * {margin:0;padding:0;}
 
+@font-face {
+    font-family: logo_font;
+    src:url('../fonts/Open_Season.ttf');
+}
+
+
+@font-face {
+    font-family: logo_desc;
+    src:url('../fonts/akkurat.ttf');
+}
+
 body {
 	background-image: url(../img/default-background_blue.jpg);
 	-moz-background-size:cover;
 	-ms-background-size:cover;
 	-webkit-background-size:cover;
 	background-size:cover;
+}
+
+#content_all {
+	width: 1248px;
+    height: 1200px;
+    background: #FFF;
+    margin: 0 auto;
+}
+
+#content_left {
+	width: 25%;
+    height: 100%;
+    background: #333333;
+    float: left;
+}
+
+#personal_logo {
+	border-bottom: solid 1px #768f92;
+    padding-bottom: 30px;
+}
+
+#blog_name {
+	font-family: logo_font;
+	color:#FFF;
+	font-size: 35px;
+    text-align: center;
+    margin: 40px 0 5px 0;
+}
+
+#blog_desc {
+	font-family: logo_desc;
+	color:#6B685A;
+	text-align: center;
+	font-size:5px;
 }
