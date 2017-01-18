@@ -10,7 +10,7 @@ baseurl: /
 #静态内容请求路径
 static_path: /static
 
-#port: 4001
+port: 4001
 
 #搜索功能
 
