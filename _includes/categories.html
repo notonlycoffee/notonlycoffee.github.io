@@ -1,8 +1,12 @@
+{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign category_words = site_categories | split:',' | sort %}
 
-
-
-<div>
-	
-	<span>这里是分类</span>
-
-</div>
+<section>
+  <h3 class="title left_title">Categories</h3>
+  <ul>
+    {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ category_words[item] | strip_newlines }}{% endcapture %}
+    <li class="li_not"><a class="link_not" href="/categories.html#{{ this_word | cgi_escape }}" rel="nofollow">{{ this_word }}</a></li>
+    {% endunless %}{% endfor %}
+  </ul>
+</section>

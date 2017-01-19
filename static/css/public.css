@@ -21,7 +21,7 @@ body {
 
 #content_all {
 	width: 1248px;
-    height: 1000px;
+    height: 100%;
     background: #FFF;
     margin: 0 auto;
 }
@@ -32,6 +32,19 @@ body {
     background: #333333;
     float: left;
 }
+
+#content_center {
+	float:right;
+	text-align: left;
+	width:75%;
+}
+
+
+#float_clear {
+	clear:both;
+}
+
+
 
 #personal_logo {
 	border-bottom: solid 1px #768f92;
@@ -69,4 +82,17 @@ body {
 
 #categories_div,#recent_comments_div,#recent_posts_div{
 	border-bottom: solid 1px #768f92;
+}
+
+.link_not {
+	text-decoration: none;
+	color:#FFF;
+}
+
+.li_not {
+	list-style-type: none;
+}
+
+.left_title {
+	color:#717171;
 }
