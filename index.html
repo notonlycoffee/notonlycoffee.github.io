@@ -1,58 +1,33 @@
 ---
-layout: default
+layout: null
 title: not only coffee
 ---
 
-<h2>{{ page.title }}</h2>
 
-<p>最新文章</p>
-<ul>
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-	{% for post in paginator.posts %}
-    	<p><a href="{{ post.url }}">{{ post.title }}</a>.................................{{ post.date | date_to_string }}</p>
-	{% endfor %}
+    <!-- Bootstrap -->
+    <link href="{{ site.static_path }}/bootStrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>你好，世界！</h1>
 
-</ul>
-
-<div class="paginator_content">
-{% if paginator.total_pages > 1 %}
-<!-- 分页代码 -->
-
-<!-- 首页 -->
-<a href="/">First</a>
-<!-- 首页 -->
-
-<!-- 上一页 -->
-	{% if paginator.previous_page %}
-	    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
-	{% endif %}
-<!-- 上一页 -->
-
-
-<!-- 页码 --><!-- 如果是当前页面,则不给点击;如果是第一页,则用/index.html的url;其他的页码,直接使用变量 -->
-	{% for page in (1..paginator.total_pages) %}
-	    {% if page == paginator.page %}
-	      <span class="active">{{ page }}</span>
-	    {% elsif page == 1 %}
-	      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-	    {% else %}
-	    	<!-- site.paginate_path 在前面加上site.baseurl,将//替换为/,将:num替换为遍历得到的页码数 -->
-	      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-	    {% endif %}
-	{% endfor %}
-<!-- 页码 -->	
-
-
-<!-- 下一页 -->
-	{% if paginator.next_page %}
-	    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
-	{% endif %}
-<!-- 下一页 -->
-
-<!-- 末页 -->
-<a href="/page{{ paginator.total_pages }}/">Last</a>
-<!-- 末页 -->
-
-{% endif %}
-</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ site.static_path }}/bootStrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
