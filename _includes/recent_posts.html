@@ -1,8 +1,11 @@
 
 
 
-<div>
-	
-	<span>这里是最近文章</span>
-
-</div>
+<section>
+  <h3 class="title left_title">Recently Posts</h3>
+  <ul>
+    {% for post in site.posts limit:8 %}
+    <li class="li_not"><a class="link_not" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
