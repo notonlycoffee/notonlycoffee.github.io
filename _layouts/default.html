@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>{{ page.title }}</title>
-		<link href="{{ site.static_path }}/css/public.css" rel="stylesheet">
-	</head>
+	{% include head.html %}
 
 	<body>
 		
@@ -28,6 +24,16 @@
 	</div>
 
 
+	<script src="{{ site.static_path }}/js/jquery.min-1.9.1.js"></script>
+	<script src="{{ site.static_path }}/bootStrap/js/bootstrap.js"></script>
 
+
+
+
+	{% include footer.html %}
 	</body>
+
+
+
+
 </html>
