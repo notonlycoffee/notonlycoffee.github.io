@@ -16,3 +16,9 @@ port: 4001
 
 #搜索功能
 
+
+# RSS 订阅
+name:         Not Only Coffee
+description:  blog to share IT Knowledge
+url:          https://notonlycoffee.github.io/
+# RSS 订阅 结束
