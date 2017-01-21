@@ -2,25 +2,15 @@
 <html>
 
 	{% include head.html %}
+	{% include header.html %}
 
 	<body>
 		
 
-	<div id="content_all">
-		
-		<div id="content_left">
-			
-			{% include left.html %}
+	<div>
 
-		</div>
+	{{ content }}
 
-		<div id="content_center">
-			
-			{{ content }}
-
-		</div>
-
-		<div id="float_clear"></div>
 	</div>
 
 
@@ -29,17 +19,7 @@
 
 
 
-
 	{% include footer.html %}
+	
 	</body>
-
-<script type="text/javascript">
-	$("#search_input").click(function() {
-		$("#search_page").show();
-	});
-</script>
-
-
-
-
 </html>
