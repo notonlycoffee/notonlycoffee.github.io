@@ -1,0 +1,56 @@
+---
+layout: default
+title: NOT ONLY COFFEE
+---
+
+<p>最新文章</p>
+<ul>
+
+	{% for post in paginator.posts %}
+    	<p><a href="{{ post.url }}">{{ post.title }}</a>.................................{{ post.date | date_to_string }}</p>
+	{% endfor %}
+
+
+</ul>
+
+<div class="paginator_content">
+{% if paginator.total_pages > 1 %}
+<!-- 分页代码 -->
+
+<!-- 首页 -->
+<a href="/">First</a>
+<!-- 首页 -->
+
+<!-- 上一页 -->
+	{% if paginator.previous_page %}
+	    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+	{% endif %}
+<!-- 上一页 -->
+
+
+<!-- 页码 --><!-- 如果是当前页面,则不给点击;如果是第一页,则用/index.html的url;其他的页码,直接使用变量 -->
+	{% for page in (1..paginator.total_pages) %}
+	    {% if page == paginator.page %}
+	      <span class="active">{{ page }}</span>
+	    {% elsif page == 1 %}
+	      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+	    {% else %}
+	    	<!-- site.paginate_path 在前面加上site.baseurl,将//替换为/,将:num替换为遍历得到的页码数 -->
+	      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+	    {% endif %}
+	{% endfor %}
+<!-- 页码 -->	
+
+
+<!-- 下一页 -->
+	{% if paginator.next_page %}
+	    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+	{% endif %}
+<!-- 下一页 -->
+
+<!-- 末页 -->
+<a href="/page{{ paginator.total_pages }}/">Last</a>
+<!-- 末页 -->
+
+{% endif %}
+</div>
