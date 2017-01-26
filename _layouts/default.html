@@ -6,54 +6,75 @@
 
 <style type="text/css">
 	
-	div {
+	/*div {
 		border: solid 1px red;
-	}
+	}*/
 
 </style>
 
 <body>
-<div class="container">
-    <div class="row" >
-        <div class="col-xs-6 col-sm-3" 
-            style="background-color: #dedef8;
-            box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand" href="/">NOT ONLY COFFEE</a>
         </div>
-        <div class="col-xs-6 col-sm-3" 
-        style="background-color: #dedef8;box-shadow: 
-        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-            eiusmod tempor incididunt ut. 
-            </p>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/">spring</a>
+                </li>
+
+                <li>
+                    <a href="/apps/">java</a>
+                </li>
+
+                <li>
+                    <a href="/open/">github</a>
+                </li>
+
+                <li>
+                    <a href="/tags/">maven</a>
+                </li>
+
+                <li>
+                    <a href="/about/">boststrap</a>
+                </li>
+            </ul>
         </div>
- 
-        <!-- <div class="clearfix visible-xs"></div> -->
- 
-        <div class="col-xs-6 col-sm-3" 
-        style="background-color: #dedef8;
-        box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-        </div>
-        <div class="col-xs-6 col-sm-3" 
-        style="background-color: #dedef8;box-shadow: 
-        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim 
-            </p>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+
+
+<header class="intro-header" style="background-image: url('{{ site.static_path }}/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="spanite-heading">
+                    <h1>NOT ONLY COFFEE</h1>
+                    <hr class="small">
+                    <span class="subheading">CODING CHANGE THE WORLD</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</header>
+
+
+
+
+
+
+
 
 </body>
-
 
 </html>
