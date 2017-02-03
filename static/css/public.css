@@ -14,3 +14,29 @@
 	text-align:center;
 	color:#FFF;
 }
+
+
+
+
+
+.spanite-heading h1 {
+    font-size: 50px
+}
+
+@media only screen and (min-width: 768px) {
+   .spanite-heading h1 {
+        font-size:80px
+    }
+}
+
+
+.intro-header {
+    background: no-repeat center center;
+    background-color: gray;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 0;
+}
