@@ -13,7 +13,7 @@
 .spanite-heading {
 	text-align:center;
 	color:#FFF;
-    height:444px;
+    /*height:444px;*/
 }
 
 
@@ -41,11 +41,11 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
    .spanite-heading {
         height:261px;
     }
-}
+}*/
 
 
 
@@ -58,6 +58,15 @@
     background-size: cover;
     -o-background-size: cover;
     margin-bottom: 0;
+    
+    padding:8% 0;
+
+    /*不选中文字*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    /*不选中文字结束*/
 }
 
 
