@@ -13,6 +13,7 @@
 .spanite-heading {
 	text-align:center;
 	color:#FFF;
+    height:444px;
 }
 
 
@@ -23,11 +24,29 @@
     font-size: 50px
 }
 
+ .spanite-heading span {
+        font-size:20px;
+    }
+
 @media only screen and (min-width: 768px) {
    .spanite-heading h1 {
         font-size:80px
     }
 }
+
+
+@media only screen and (min-width: 768px) {
+   .spanite-heading span {
+        font-size:30px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   .spanite-heading {
+        height:261px;
+    }
+}
+
 
 
 .intro-header {
@@ -40,3 +59,6 @@
     -o-background-size: cover;
     margin-bottom: 0;
 }
+
+
+
