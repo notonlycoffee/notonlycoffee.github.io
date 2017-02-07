@@ -32,14 +32,15 @@
    .spanite-heading h1 {
         font-size:80px
     }
-}
-
-
-@media only screen and (min-width: 768px) {
-   .spanite-heading span {
+    .spanite-heading span {
         font-size:30px
     }
 }
+
+
+/*@media only screen and (min-width: 768px) {
+   
+}*/
 
 /*@media only screen and (max-width: 768px) {
    .spanite-heading {
@@ -67,6 +68,8 @@
     -ms-user-select:none;
     user-select:none;
     /*不选中文字结束*/
+
+    margin-top:2%;
 }
 
 
