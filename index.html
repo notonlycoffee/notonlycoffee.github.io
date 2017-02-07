@@ -4,6 +4,21 @@ title: NOT ONLY COFFEE
 ---
 
 
+<header class="intro-header" style="background-image: url('{{ site.static_path }}/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="spanite-heading">
+                        <h1>NOT ONLY COFFEE</h1>
+                        <hr class="small">
+                        <span class="subheading">CODING CHANGE THE WORLD</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
 
 <article>
     <div class="container">
@@ -37,14 +52,16 @@ title: NOT ONLY COFFEE
     {% endfor %}      
 
     {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+        
+        <button type="button" class="btn btn-default pre_button_style"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a></button>
     {% endif %}
 
         {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+        
+        <button type="button" class="btn btn-default next_button_style"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a></button>
     {% endif %}    
 
-                    
+                    <div style="clear:both;"></div>
 
                 </div>
             </div>

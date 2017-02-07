@@ -8,43 +8,7 @@
 
 
 
-
-<nav id="nav_id" class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container-fluid"> 
-    <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                data-target="#example-navbar-collapse">
-            <span class="sr-only">切换导航</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">NOT ONLY COFFEE</a>
-    </div>
-    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="javascript:void(0);" id="cb-search-btn">搜索</a></li>
-            <li><a href="/">首页</a></li>
-            <li><a href="/">分类</a></li>
-            <li><a href="/">关于</a></li>
-        </ul>
-    </div>
-    </div>
-</nav>
-
-<header class="intro-header" style="background-image: url('{{ site.static_path }}/img/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="spanite-heading">
-                        <h1>NOT ONLY COFFEE</h1>
-                        <hr class="small">
-                        <span class="subheading">CODING CHANGE THE WORLD</span>
-                    </div>
-            </div>
-        </div>
-    </div>
-</header>
+{% include nav.html %}
 
 
 {{ content }}

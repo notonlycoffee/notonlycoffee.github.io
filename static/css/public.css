@@ -75,10 +75,13 @@
 
 
 .post_preview_single:hover {
-    border:solid 1px red;
+    /*border:solid 1px red;
     cursor:pointer;
     color:red;
-    border-radius:5px;
+    border-radius:5px;*/
+
+    cursor:pointer;
+    background:#eaeaea;
 }
 
 .post_preview_list a {
@@ -105,3 +108,11 @@ footer {
     margin:5% 0 2% 0;
 }
 
+
+.pre_button_style {
+    float:left;
+}
+
+.next_button_style {
+    float:right
+}
