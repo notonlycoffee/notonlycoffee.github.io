@@ -1,7 +1,7 @@
 
 #index.html使用分页效果
 gems: [jekyll-paginate]
-paginate: 2
+paginate: 5
 paginate_path: "page:num"
 #index.html使用分页效果 结束
 
