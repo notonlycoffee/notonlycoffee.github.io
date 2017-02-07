@@ -1,13 +1,13 @@
 
 @font-face {
     font-family: logo_font;
-    src:url('../fonts/Open_Season.ttf');
+    src:url('../font/Open_Season.ttf');
 }
 
 
 @font-face {
     font-family: logo_desc;
-    src:url('../fonts/akkurat.ttf');
+    src:url('../font/akkurat.ttf');
 }
 
 .spanite-heading {
@@ -84,4 +84,19 @@
 .post_preview_list a {
     text-decoration: none;
     color:#000;
+}
+
+
+.right_margin {
+    margin-right:5%;
+}
+
+
+.link_no_style {
+    text-decoration: none;
+    color:#000;
+}
+
+.link_no_style:hover {
+    text-decoration: none;
 }
