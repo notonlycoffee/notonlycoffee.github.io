@@ -100,3 +100,8 @@
 .link_no_style:hover {
     text-decoration: none;
 }
+
+footer {
+    margin:5% 0 2% 0;
+}
+
