@@ -2,7 +2,7 @@
 layout: post
 category: Web
 tag: Web_Tag
-header-img: "img/post1.jpg"
+header-img: "img/home-bg.jpg"
 ---
 
 
